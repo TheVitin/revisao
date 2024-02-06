@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: green;
+      color: #fff;
+      padding: 1em;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    section {
+      margin: 20px;
+    }
+
+    article {
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: green;
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+      position: relative;
+      bottom: 0;
+      width: 97,5%;
+    }
+    .cadastro {
+    background-color: rgb(24, 249, 24);
+    float: right;
+    margin-right: 50px; 
+    height: 39px;
+    width: 130px;
+    font-size: 15px;
+    border-color: transparent;
+    color: #fff;
+}
+
+.login {
+    background-color: rgb(2, 78, 2);
+    float: right; 
+    margin-right: 20px; 
+    height: 39px;
+    width: 120px;
+    font-size: 15px;
+    border-color: transparent;
+    color: #fff;
+    
+}
+
+
+
+.cadastro:hover{
+transfo
+rm: scale(1.1);
+transition: all 0.5s;
+background-color: rgb(2, 78, 2);
+border-color: transparent;
+}
+.login:hover{
+transform: scale(1.1);
+transition: all 0.5s;
+background-color: rgb(24, 249, 24);
+border-color: transparent;
+}
+
+.botoes{
+   border: 10px solid transparent;
+}
+
+.lista{
+    text-align: left;
+}
+
+
+  </style>
+
+</head>
+<body>
+  
+ 
+
+  <header>
+    <div class="botoes">
+      <button onclick="cadastro()" class="cadastro">Cadastre-se</button>
+      <button onclick="login()" class="login">Entrar</button>
+  </div>
+
+    <nav>
+      <ul class="lista">
+        <li><a href="#" home()>Início</a></li>
+        <li><a href="#" onclick="postagens()">Postagens</a></li>
+        <li><a href="#" onclick="sobre()">Sobre</a></li>
+        <li><a href="#" onclick="contato()">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="featured-post">
+    <h2>Post em Destaque</h2>
+    <article>
+      <h3>Título do Post</h3>
+      <p>1</p>
+      <a href="#">Leia mais</a>
+    </article>
+  </section>
+
+  <section id="latest-posts">
+    <h2>Últimos Posts</h2>
+    <article>
+      <h3>Título do Post 1</h3>
+      <p>2</p>
+      <a href="#">Leia mais</a>
+    </article>
+    <article>
+      <h3>Título do Post 2</h3>
+      <p>3</p>
+      <a href="#">Leia mais</a>
+    </article>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Meu Blog. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    function contato() {
+        window.location.href = "/";
+    }
+
+    function home() {
+        window.location.href = "/";
+    }
+
+    function sobre() {
+        window.location.href = "/";
+    }
+
+    function login() {
+        window.location.href = "login.html";
+    }
+
+    function cadastro() {
+        window.location.href = "cadastro.html";
+    }
+</script>
+
+ 
+
+</body>
+</html>
